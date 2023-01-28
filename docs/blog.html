@@ -16,6 +16,8 @@ title: Blog
 <h1>Miscellaneous Projects</h1>
 {% for photo in site.data.photo_highlights %}
   <h3>{{photo.title}}</h3>
+    {{photo.description}}
+    <p>
     {% for img in photo.images %}
     	<img src="{{img}}" />
     {% endfor %}
