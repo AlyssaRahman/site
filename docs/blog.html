@@ -12,3 +12,11 @@ title: Blog
     </li>
   {% endfor %}
 </ul>
+
+<h1>Miscellaneous Projects</h1>
+{% for photo in site.data.photo_highlights %}
+  <h3>{{photo.title}}</h3>
+    {% for img in photo.images %}
+    	<img src="{{img}}" />
+    {% endfor %}
+{% endfor %}
