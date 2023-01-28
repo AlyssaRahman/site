@@ -26,7 +26,8 @@ url: https://www.alyssarahman.com
 github_username: alyssarahman
 
 # Build settings
-remote_theme: pages-themes/architect@v0.2.0
+#remote_theme: pages-themes/architect@v0.2.0
+theme: architect
 plugins:
 - jekyll-remote-theme 
 
