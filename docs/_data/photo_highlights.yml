@@ -1,17 +1,17 @@
 - title: Office Pillow Blanket
   images:
-    - photos/blanket.jpeg
-    - photos/pillow.jpeg 
+    - assets/images/blanket.jpeg
+    - assets/images/pillow.jpeg 
   url: 
 - title: DIY Plastic Shredding
   images:
-    - photos/shredder_side.jpeg
-    - photos/shredder_top.jpeg
-    - photos/shredder_result.jpeg
+    - assets/images/shredder_side.jpeg
+    - assets/images/shredder_top.jpeg
+    - assets/images/shredder_result.jpeg
   url:
 - title: Laser Engraved Mug
   images:
-    - photos/mug.jpeg
+    - assets/images/mug.jpeg
 - title: Woodburned Christmas Coasters
   images:
-    - photos/coasters.jpeg
+    - assets/images/coasters.jpeg
