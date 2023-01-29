@@ -40,13 +40,17 @@
             {% endfor %}
           </ul>
           <h1>Other Accounts</h1>
-          I have accounts on the following sites where I log the projects I've made from others' designs.
+          <div style="font-size:10px">
+		I have accounts on the following sites where I log the projects I've made from others' designs.
+          </div>
+          <table border=0>
           {% for account in site.data.accounts %}
-            <p>
-              <a href="{{account.url}}">
+            <tr>
+              <td><a href="{{account.url}}">
                 <img src="{{account.logo}}" style="width:25%">
-              </a>
-            </p>
+              </a></td>
+              <td style="font-size:15px">{{acount.site}}</td>
+            </tr>
           {% endfor %}
         </aside>
       </div>
