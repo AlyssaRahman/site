@@ -41,8 +41,11 @@
           </ul>
           <h1>Other Accounts</h1>
           {% for account in site.data.accounts %}
-            <a href="{{account.url}}"><img src="{{account.logo}}" style="width:25%"></a>
             <p>
+              <a href="{{account.url}}">
+                <img src="{{account.logo}}" style="width:25%">
+              </a>
+            </p>
           {% endfor %}
         </aside>
       </div>
