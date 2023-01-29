@@ -1,9 +1,3 @@
-- title: Office Pillow Blanket
-  description: This lap blanket folds into a pillow. I made it for a friend to use in her cold office / as back support.
-  images:
-    - assets/images/blanket.jpeg
-    - assets/images/pillow.jpeg 
-  url: 
 - title: DIY Plastic Shredding
   description: Writeup coming soon - I'm working on recycling plastic into 3D printer filament. Step 1 was this DIY shredder!
   images:
@@ -11,11 +5,17 @@
     - assets/images/shredder_top.jpeg
     - assets/images/shredder_result.jpeg
   url:
-- title: Laser Engraved Mug
-  description: Rotary tools make custom tumblers really easy!
-  images:
-    - assets/images/mug.jpeg
 - title: Woodburned Christmas Coasters
   description: Last year, I made some Christmas coasters with a woodburning pen I got. Once you make them, you just spray some polycrylic to finish/seal it.
   images:
     - assets/images/coasters.jpeg
+- title: Office Pillow Blanket
+  description: This lap blanket folds into a pillow. I made it for a friend to use in her cold office / as back support.
+  images:
+    - assets/images/blanket.jpeg
+    - assets/images/pillow.jpeg 
+  url: 
+- title: Laser Engraved Mug
+  description: Quick and easy gift using a laser + rotary tools
+  images:
+    - assets/images/mug.jpeg
