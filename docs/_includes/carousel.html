@@ -16,7 +16,7 @@
         <div class="carousel__track">
           <ul>
             {% for item in site.data.photo_highlights %}
-            <a href="{{ item.url }}"><li class="carousel__slide" style="background-image: url('{{ item.images[0] }}');">item.title</li></a>
+            <a href="{{ item.url }}"><li class="carousel__slide" style="background-image: url('{{ item.images[0] }}');">{{ item.title }}</li></a>
             {% endfor %}
           </ul>
         </div>
