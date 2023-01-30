@@ -47,11 +47,11 @@
   display: none;
 }
 {% for item in site.data.photo_highlights %}
-.carousel__activator:nth-of-type({{ forloop.index0 }}):checked ~ .carousel__track {
-  -webkit-transform: translateX(-{{ forloop.index0 }}00%);
-          transform: translateX(-{{ forloop.index0 }}00%);
+.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__track {
+  -webkit-transform: translateX(-{{ forloop.index }}00%);
+          transform: translateX(-{{ forloop.index }}00%);
 }
-.carousel__activator:nth-of-type({{ forloop.index0 }}):checked ~ .carousel__slide:nth-of-type({{ forloop.index0 }}) {
+.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__slide:nth-of-type({{ forloop.index }}) {
   transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
   transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
@@ -62,11 +62,11 @@
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-.carousel__activator:nth-of-type({{ forloop.index0 }}):checked ~ .carousel__controls:nth-of-type({{ forloop.index0 }}) {
+.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__controls:nth-of-type({{ forloop.index }}) {
   display: block;
   opacity: 1;
 }
-.carousel__activator:nth-of-type({{ forloop.index0 }}):checked ~ .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index0 }}) {
+.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
   opacity: 1;
 }
 {% endfor %}
@@ -139,9 +139,9 @@
   opacity: 1;
 }
 {% for item in site.data.photo_highlights %}
-.carousel__track .carousel__slide:nth-of-type({{ forloop.index0 }}) {
-  -webkit-transform: translateX({{ forloop.index0 }}00%);
-          transform: translateX({{ forloop.index0 }}00%);
+.carousel__track .carousel__slide:nth-of-type({{ forloop.index }}) {
+  -webkit-transform: translateX({{ forloop.index }}00%);
+          transform: translateX({{ forloop.index }}00%);
 }
 {% endfor %}
 
@@ -164,8 +164,8 @@
   background-color: #fafafa;
 }
 {% for item in site.data.photo_highlights %}
-.carousel__slide:nth-of-type({{ forloop.index0 }}),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index0 }}) {
+.carousel__slide:nth-of-type({{ forloop.index }}),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
   background-size: cover;
   background-position: center;
 }
