@@ -1,15 +1,15 @@
 <div class="carousel__holder">
     <div id="carousel" class="carousel">
         {% for item in site.data.photo_highlights %}
-          <input class="carousel__activator" type="radio" name="carousel" id="{{ forloop.index }}" {% if forloop.first %}checked="checked"{% endif %} />
+          <input class="carousel__activator" type="radio" name="carousel" id="index{{ forloop.index }}" {% if forloop.first %}checked="checked"{% endif %} />
         {% endfor %}
         {% for item in site.data.photo_highlights %}
           <div class="carousel__controls">
               {% if forloop.index > 1 %}
-                  <label class="carousel__control carousel__control--backward" for="{{ forloop.index | plus: 1 }}"></label>
+                  <label class="carousel__control carousel__control--backward" for="index{{ forloop.index | plus: 1 }}"></label>
               {% endif %}
               {% if forloop.index < forloop.length %}
-                  <label class="carousel__control carousel__control--forward" for="{{ forloop.index | minus: 1 }}"></label>
+                  <label class="carousel__control carousel__control--forward" for="index{{ forloop.index | minus: 1 }}"></label>
               {% endif %}
           </div>
         {% endfor %}
@@ -22,7 +22,7 @@
         </div>
         <div class="carousel__indicators">
             {% for item in site.data.photo_highlights %}
-              <label class="carousel__indicator" for="{{ forloop.index }}"></label>
+              <label class="carousel__indicator" for="index{{ forloop.index }}"></label>
             {% endfor %}
         </div>
     </div>
@@ -43,11 +43,11 @@
   display: none;
 }
 {% for item in site.data.photo_highlights %}
-.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__track {
+.carousel__activator:nth-of-type({{ forloop.index0 }}):checked ~ .carousel__track {
   -webkit-transform: translateX(-{{ forloop.index0 }}00%);
           transform: translateX(-{{ forloop.index0 }}00%);
 }
-.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__slide:nth-of-type({{ forloop.index }}) {
+.carousel__activator:nth-of-type({{ forloop.index0 }}):checked ~ .carousel__slide:nth-of-type({{ forloop.index0 }}) {
   transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
   transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
@@ -58,11 +58,11 @@
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__controls:nth-of-type({{ forloop.index }}) {
+.carousel__activator:nth-of-type({{ forloop.index0 }}):checked ~ .carousel__controls:nth-of-type({{ forloop.index0 }}) {
   display: block;
   opacity: 1;
 }
-.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
+.carousel__activator:nth-of-type({{ forloop.index0 }}):checked ~ .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index0 }}) {
   opacity: 1;
 }
 {% endfor %}
@@ -135,7 +135,7 @@
   opacity: 1;
 }
 {% for item in site.data.photo_highlights %}
-.carousel__track .carousel__slide:nth-of-type({{ forloop.index }}) {
+.carousel__track .carousel__slide:nth-of-type({{ forloop.index0 }}) {
   -webkit-transform: translateX({{ forloop.index0 }}00%);
           transform: translateX({{ forloop.index0 }}00%);
 }
@@ -160,8 +160,8 @@
   background-color: #fafafa;
 }
 {% for item in site.data.photo_highlights %}
-.carousel__slide:nth-of-type({{ forloop.index }}),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
+.carousel__slide:nth-of-type({{ forloop.index0 }}),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index0 }}) {
   background-size: cover;
   background-position: center;
 }
