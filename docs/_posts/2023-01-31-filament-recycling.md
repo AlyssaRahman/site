@@ -58,7 +58,7 @@ The Instructables author operated his shredder in small pulses. I have not neede
 
 For the best uniformity, I've been running the plastic through 2-3 times with good results. Below is an example from just 2 passes: 
 
-![Shredder Results](/assets/images/shredder_results.jpeg)
+![Shredder Results](/assets/images/shredder_result.jpeg)
 
 Make sure your shredder and the trash bin are clean before you switch materials. Mixing plastics (especially ones with different melting temperatures) can mess up your extrusion results in later steps. 
 
