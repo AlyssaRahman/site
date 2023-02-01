@@ -1,10 +1,9 @@
 ---
 layout: post
+author: alyssarahman
 ---
-# Project Overview
 TO BE ADDED 
 
-# Step By Step
 ## 0. Sorting and Prep
 TO BE ADDED 
 
