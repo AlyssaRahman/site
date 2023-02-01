@@ -50,15 +50,15 @@ I'd recommend either adding a lid or adding a bend like they have in [popcorn ma
 
 ### Results
 Final result (before I updated the hopper): 
-![Side of Shredder](assets/images/shredder_side.jpeg)
+![Side of Shredder](/assets/images/shredder_side.jpeg)
 
-![Top of Shredder](assets/images/shredder_top.jpeg)
+![Top of Shredder](/assets/images/shredder_top.jpeg)
 
 The Instructables author operated his shredder in small pulses. I have not needed to do that yet, however when I shred pill bottles and other thicker/round containers I have found better success cutting them into halves or fourths with scissors before shredding. 
 
 For the best uniformity, I've been running the plastic through 2-3 times with good results. Below is an example from just 2 passes: 
 
-![Shredder Results](assets/images/shredder_results.jpeg)
+![Shredder Results](/assets/images/shredder_results.jpeg)
 
 Make sure your shredder and the trash bin are clean before you switch materials. Mixing plastics (especially ones with different melting temperatures) can mess up your extrusion results in later steps. 
 
