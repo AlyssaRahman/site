@@ -10,3 +10,9 @@
   extra_images:
     - assets/images/heart_shaker2.jpeg
   url: https://cults3d.com/en/3d-printing/ramen0x3f
+- title: Poseable Figure
+  description: Quick print for a poseable drawing action figure. Some gotchas printing the hands, and figuring out which parts to use.
+  image: assets/images/poseablefigure1.jpeg
+  extra_images:
+    - assets/images/poseablefigure2.jpeg
+  url: https://cults3d.com/en/3d-printing/anatomically-correct-poseable-action-figure-for-drawing
