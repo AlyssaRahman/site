@@ -12,3 +12,14 @@ title: Blog
     </li>
   {% endfor %}
 </ul>
+
+<h1>Makes from Other's Designs</h1>
+
+{% for item in site.data.makes_external %}
+  <h2><a href="{{item.url}}">{{item.title}}</a></h2>
+  {{item.description}}
+  <img src="{{item.image}}">
+    {% for photo in item.extra_images %}
+      <img src="{{photo}}">
+    {% endfor %}
+{% endfor %}
